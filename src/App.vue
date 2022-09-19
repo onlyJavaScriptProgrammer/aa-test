@@ -1,26 +1,39 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="
+    flex
+    flex-col
+    box-border
+    pt-2.5
+    px-2.5
+    sm:container
+    sm:flex-row
+    sm:pt-1b
+    "
+  >
+    <BtnToMoscow />
+    <BtnToSPB />
+  </div>
+  <ModalWindow />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
+import ModalWindow from './components/ModalWindow.vue';
+import BtnToMoscow from './components/BtnToMoscow.vue';
+import BtnToSPB from './components/BtnToSPB.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
+    ModalWindow,
+    BtnToMoscow,
+    BtnToSPB,
   },
 };
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  #app {
+    width: 100%;
+    height: 100%;
+  }
 </style>
