@@ -2,6 +2,7 @@
 
 ## Установка проекта
 ```
+git clone https://github.com/onlyJavaScriptProgrammer/aa-test.git
 npm install
 ```
 
